@@ -1,0 +1,40 @@
+{
+  "name": "vanwittlaer/example-one",
+  "description": "Example: Implement custom field via entity extension",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "VanWittlaer GmbH"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "VanWittlaer\\ExampleOne\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "VanWittlaer\\ExampleOne\\VanWittlaerExampleOne",
+    "copyright": "VanWittlaer GmbH",
+    "label": {
+      "de-DE": "VanWittlaerExampleOne",
+      "en-GB": "VanWittlaerExampleOne"
+    },
+    "description": {
+      "de-DE": "Example: Implement custom field via entity extension",
+      "en-GB": "Example: Implement custom field via entity extension"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://vanwittlaer.de",
+      "en-GB": "https://vanwittlaer.de"
+    },
+    "supportLink": {
+      "de-DE": "https://vanwittlaer.de",
+      "en-GB": "https://vanwittlaer.de"
+    }
+  }
+}

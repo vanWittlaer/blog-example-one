@@ -1,0 +1,12 @@
+{% block sw_promotion_discount_max_value %}
+    {% parent %}
+    <sw-container columns="1fr 1fr" gap="0px 30px" v-if="discount.extensions.addons">
+        <sw-text-field
+            type="text"
+            v-model="discount.extensions.addons.promotionDiscountKey"
+            :label="$tc('vanwittlaer.labelPromotionDiscountKey')"
+            allowEmpty
+            >
+        </sw-text-field>
+    </sw-container>
+{% endblock %}

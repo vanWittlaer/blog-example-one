@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <!-- Entity definition -->
+        <service id="VanWittlaer\ExampleOne\DataAbstractionLayer\Entity\PromotionDiscountAddonsDefinition">
+            <tag name="shopware.entity.definition" entity="vanwittlaer_promotion_discount_addons"/>
+        </service>
+
+        <!-- Entity extension -->
+        <service id="VanWittlaer\ExampleOne\DataAbstractionLayer\Extension\PromotionDiscountAddonsExtension">
+            <tag name="shopware.entity.extension"/>
+        </service>
+
+        <!-- Command -->
+        <service id="VanWittlaer\ExampleOne\Command\ListPromotionDiscountsCommand">
+            <argument type="service" id="promotion_discount.repository"/>
+            <tag name="console.command"/>
+        </service>
+
+    </services>
+</container>
